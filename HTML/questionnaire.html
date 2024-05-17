@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VACHOK SHOP</title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quella%3A400"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700%2C800"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C700%2C800"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+    
+    </head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../Images/logo.png" alt="Логотип" class="logo">
+        </a>
+        <h1>Vachok shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+
+            <li><div class="dropdown"><a class="announcements-nav"href="">Реєстрація <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#id02">Увійти</a>
+                <a href="#id01">Зарєструватись</a>
+            </div></li>
+
+                <li><a href="questionnaire.html">Опитування</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+
+                <li><a href="shop.html">Магазин</a></li>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <img src="../Images/inst-icon.png" alt="Логотип Інтаграм" class="logoinst">
+            <img src="../Images/telegram-icon.png" alt="Логотип Телеграм" class="logotg">
+        </a>
+    </header>
+
+    <section id="questionnaire" class="questionnaire">
+        <form action="" method="post" class="quest_radio_set quest_set">
+            <p>1. Якому взуттю ви відаєте перевагу?</p>
+        
+            <input type="radio" name="1" value="Босоніжки"> Босоніжки<br>
+            <input type="radio" name="1" value="Кросівки"> Кросівки<br>
+            <input type="radio" name="1" value="Шльопанці"> Шльопанці<br>
+    
+            <p>2. Якому бренду відаєте перевагу?</p>
+            <input type="radio" name="2" value="ADIDAS"> ADIDAS<br>
+            <input type="radio" name="2" value="NIKE"> NIKE<br>
+            <input type="radio" name="2" value="NEW BALANCE"> NEW BALANCE<br>
+    
+            <p>3. Який розмір ноги?</p>
+            <input type="radio" name="3" value="35-38"> 35-38<br>
+            <input type="radio" name="3" value="39-41"> 39-41<br>
+            <input type="radio" name="3" value="41-44"> 41-44<br>
+
+            <p>4. Якого матеріалу ви найбільше уникаєте?</p>
+            <input type="radio" name="4" value="Шкіра"> Шкіра<br>
+            <input type="radio" name="4" value="Тканина"> Тканина<br>
+            <input type="radio" name="4" value="Замінник"> Замінник<br>
+
+            <p>5. Який бюджет ви визначили для взуття?</p>
+            <input type="radio" name="5" value="До 2000грн."> До 2000грн.<br>
+            <input type="radio" name="5" value="Від 2000грн. до 5000грн"> Від 2000грн. до 5000грн.<br>
+            <input type="radio" name="5" value="Від 5000грн."> Від 5000грн.<br>
+
+            <p>6. Чи цікавлять вас додаткові характеристики?</p>
+            <input type="radio" name="6" value="Водонепроникність"> Водонепроникність<br>
+            <input type="radio" name="6" value="Амортизація"> Амортизація<br>
+            <input type="radio" name="6" value="Антискользяща підошва"> Антискользяща підошва<br>
+    
+            <br> <br>
+            <button class="go-button-questionnaire">Завершити опитування</button>
+        </form>
+
+        <img src="../Images/banner.png" alt="Головний банер" class="phquestionnaire">
+    </section>
+    
+
+    <form class="window" id="id01">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Додана кнопка для закриття -->
+                <button class="closebtn" onclick="location.href='#'">×</button>
+                
+                <label for="allergies">Ім'я:</label>
+                <input type="text" name="allergies"><br><br>
+    
+                <label for="allergies">Фамілія:</label>
+                <input type="text" name="allergies"><br><br>
+    
+                <label for="date">Дата народження:</label>
+                <input type="datetime-local" name="date" required step="0"><br><br>
+    
+    
+                <label for="occasion">Стать :</label>
+                <select name="occasion">
+                    <option value="birthday">Чоловіча</option>
+                    <option value="anniversary">Жіноча</option>
+                </select><br><br>
+    
+                <label for="allergies">Придумайте пароль:</label>
+                <input type="text" name="allergies"><br><br>
+    
+                <label for="allergies">Повторіть пароль:</label>
+                <input type="text" name="allergies"><br><br>
+    
+                <label for="contact_method">Вкажiть номер телефону для зв'язку з нами:</label>
+                <input type="text" name="contact_method" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                    placeholder="xxx xxx xxxx"><br><br>
+                <button>Зарєструватись</button>
+            </div>
+        </div>
+    </form>
+    
+    
+    
+    <form class="window" id="id02">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Додана кнопка для закриття -->
+                <button class="closebtn" onclick="location.href='#'">×</button>
+    
+                <label for="contact_method">Вкажiть номер телефону для зв'язку з нами:</label>
+                <input type="text" name="contact_method" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                    placeholder="xxx xxx xxxx"><br><br>
+    
+                <label for="allergies">Придумайте пароль:</label>
+                <input type="text" name="allergies"><br><br>
+                <button>Зарєструватись</button>
+            </div>
+        </div>
+    </form>
+
+
+
+
+<footer class="footer-container">
+    <section class="auto-group">
+        <section class="frame frame-large">
+            <section class="content">
+                <p class="tagline">Ми допоможемо вам знайти кросівки вашої мрії</p>
+            </section>
+            <section class="images">
+                <img class="icon" src="../Images/group-11.png"/>
+                <img class="icon" src="../Images/group-12.png"/>
+                <img class="icon" src="../Images/group-13.png"/>
+            </section>
+        </section>
+        <section class="frame frame-small">
+            <p class="brand">Vachok Shop </p>
+            <p class="copyright">2023 прекрасний магазин Vachok Shop</p>
+        </section>
+        <section class="frame frame-medium">
+            <section class="column">
+                <p class="section-title">Інформація</p>
+                <p class="link">Про нас</p>
+                <p class="link">Продукт</p>
+                <p class="link">Блог</p>
+            </section>
+            <section class="column">
+                <p class="section-title">Компанія</p>
+                <p class="link">Спільнота</p>
+                <p class="link">Кар'єра</p>
+                <p class="link">Наша історія</p>
+            </section>
+            <section class="column">
+                <p class="section-title">Контакти</p>
+                <p class="link">Почнемо</p>
+                <p class="link">Ціноутворення</p>
+                <p class="link">Ресурси</p>
+            </section>
+        </section>
+    </section>
+</footer>
+
+</body>
+</html>

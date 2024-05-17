@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+body {
+    font-family: 'Overlock SC', sans-serif;
+    background-color: #0ab020b6;
+    margin: 0%;
+
+}
+
+
+/* --- НАВІГАЦІЯ --- */
+.main-header {
+    background-color: #ffffff;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fresh-fruits {
+    padding-top: 0px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.main-nav-list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.secondary-nav-list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+.logo {
+    margin: 0;
+    color: #0ab020b6;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #0ab020b6;
+}
+
+.button-activ {
+
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 22px;
+
+    border-radius: 4px;
+    color: #0ab020b6;
+
+}
+
+.button:hover {
+    background-color: #0ab020b6;
+    border-radius: 4px;
+    color: white;
+}
+
+
+/* --- ТІЛО (Index) --- */
+ul {
+    list-style-type: none;
+}
+
+.fresh-fruits {
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    color: #ffffff;
+    display: inline-block;
+    background-image: url('./photo/other_photo/istockphoto2048x2048.jpg');
+    background-size: cover;
+    /* або contain, в залежності від вашого вибору */
+    background-position: center;
+    /* визначте положення зображення */
+}
+
+
+
+.main-title {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.section-description {
+    font-size: 24px;
+}
+
+.main-info{
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.section-title{
+    
+    font-size: 36px;
+}
+
+.section-description{
+    
+    font-size: 30px;
+}
+
+
+/*---------- Наступний Контейнер -----------*/
+.no-main-class {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: #ffffff;
+    
+    font-size: 36px;
+
+}
+
+.list-offers {
+    display: flex;
+
+    justify-content: center;
+    /* Відцентрує по горизонталі */
+
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .list-offers {
+        flex-direction: column;
+        /* Змінюємо орієнтацію на вертикальну */
+    }
+}
+
+
+.fruit-offers {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+
+.fruit-img {
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.discount-buttom{
+    text-decoration: none;
+    background-color: #0ab020b6;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    width: 110px;
+}
+
+
+.footer {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Shop */
+.block-filter {
+
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 20px;
+
+
+}
+
+.filter-buttom {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    height: 55px;
+    width: 250px;
+
+    font-size: 18px;
+    color: #0ab020b6;
+
+}
+
+.boxin {
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .boxin {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .boxin {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.img-shop {
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.mini-boxin {
+    width: 310px;
+    height: 520px;
+
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mini-boxin-info{
+    margin-left: 10px;
+}
+
+.price {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.addtobag {
+    background-color: #0ab020b6;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+/* The Modal (background) */
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    
+}
+
+.modal-content2 {
+    /* background-color: #fefefe; */
+    background-image: url('./photo/other_photo/Реклама лемонів.jpg');
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 20vh;
+}
+
+.img-lemon{
+    width: 60%;
+}
+
+.content-lemon{
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.baton{
+    background-color: #ffffff;
+    color: black;
+    border: none;
+
+    width: 120px;
+    height: 40px;
+
+    font-size: 16px;
+}
+
+
